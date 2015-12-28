@@ -1,9 +1,9 @@
-import m = require("./manager");
+import a = require("./a");
 module b {
-  export function changeDataValue() {
-    console.log("2: " + m.data);
-    m.data = "fuga";
-    console.log("3: " + m.data);
+  export var v = "hoge";
+  export function init() {
+    console.log("Aloha! I'm B! a.v = " + a.v);
   }
+  init();
 }
 export = b;
